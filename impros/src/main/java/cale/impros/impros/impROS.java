@@ -1,15 +1,23 @@
 package cale.impros.impros;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.support.v4.app.ActivityCompat;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
 
 public class impROS {
+
+    public static void startAct(Activity act) {
+        act.startActivity(new Intent(act, MainActivity.class));
+    }
+
     public final static boolean telKontrol(Context context, String strCepTel) {
         if (strCepTel.length() != 10) {
             Toast.makeText(context, "Telefon Numaranız 10 Haneli Olmalıdır.", Toast.LENGTH_LONG);
