@@ -3,7 +3,8 @@
     package="cale.impros.impros">
 
     <application>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".DenemeAct"></activity>
     </application>
 
 </manifest>

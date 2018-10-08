@@ -7,7 +7,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
-import android.support.v4.app.ActivityCompat;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
@@ -15,7 +14,7 @@ import android.widget.Toast;
 public class impROS {
 
     public static void startAct(Activity act) {
-        act.startActivity(new Intent(act, MainActivity.class));
+        act.startActivity(new Intent(act, DenemeAct.class));
     }
 
     public final static boolean telKontrol(Context context, String strCepTel) {
